@@ -1,0 +1,174 @@
+@use "sass:color";
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+
+  &__foto {
+    text-align: center;
+
+    img {
+      width: 220px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    h3 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__info {
+    max-width: 600px;
+    text-align: justify;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+
+    a {
+      background-color: greenyellow;
+      padding: 1rem;
+      border-radius: 1rem;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
+
+.skills {
+  text-align: center;
+  padding: 3rem 2rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .skill-card {
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    &.angular {
+      background: #dd0031;
+      color: #fff;
+    }
+
+    &.material {
+      background: #009688;
+      color: #fff;
+    }
+
+    &.typescript {
+      background: #007acc;
+      color: #fff;
+    }
+
+    &.html {
+      background: #e34c26;
+      color: #fff;
+    }
+
+    &.css {
+      background: #264de4;
+      color: #fff;
+    }
+  }
+}
+
+.proyectos {
+  text-align: center;
+  padding: 3rem 2rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .proyecto-card {
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 15rem;
+      height: 20rem;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      object-fit: cover;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  }
+}

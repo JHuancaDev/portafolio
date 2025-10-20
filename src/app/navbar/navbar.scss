@@ -1,0 +1,14 @@
+div {
+
+  mat-toolbar {
+    background: #1976d2;
+    /* Color primario de Material */
+    color: white;
+    display: block;
+    text-align: center;
+    div{
+      padding: 1rem;
+      font-size: 30px;
+    }
+  }
+}
