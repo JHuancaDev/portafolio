@@ -25,3 +25,57 @@ header {
     }
   }
 }
+
+
+@media (max-width: 800px) {
+    header {
+    display: block;
+    text-align: center;
+    h2 {
+      padding: 1rem 1rem 1rem 1rem;
+      margin-top: 2rem;
+    }
+
+    div {
+      display: flex;
+      margin: .5rem;
+
+      a {
+        width: 95%;
+        padding: 1rem .5rem 1rem .5rem;
+        margin: auto .2rem;
+        font-size: 20px;
+        color: #0d37f3;
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    display: block;
+    text-align: center;
+    h2 {
+      padding: 1rem 1rem 1rem 1rem;
+      margin-top: 2rem;
+    }
+
+    div {
+      display: grid;
+      margin: .5rem;
+
+      a {
+        width: 95%;
+        padding: 1rem .5rem 1rem .5rem;
+        margin: auto .2rem;
+        font-size: 20px;
+        font-weight: bold;
+        color: #0d37f3;
+        text-decoration: none;
+      }
+    }
+
+  }
+}
