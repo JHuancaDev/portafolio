@@ -15,18 +15,18 @@ export class Inicio {
   constructor(private dialog: MatDialog) { }
 
   lenguajes = [
-    { name: 'SQL', icon: '/lenguajes/sql.png', class: 'sql' , nivel:'Basico-Intermedio'},
-    { name: 'TypeScript', icon: '/lenguajes/Typescript.png', class: 'typescript' , nivel:'Basico-Intermedio'},
-    { name: 'Java', icon: '/lenguajes/java.png', class: 'java' , nivel:'Intermedio'},
-    { name: 'HTML', icon: '/lenguajes/html.png', class: 'html', nivel:'Intermedio' },
-    { name: 'CSS3 / SCSS', icon: '/lenguajes/scss.png', class: 'css', nivel:'Intermedio' },
-    { name: 'PHP', icon: '/lenguajes/php.png', class: 'php' , nivel:'Basico'},
+    { name: 'SQL', icon: '/lenguajes/sql.png', class: 'sql', nivel: 'Basico-Intermedio' },
+    { name: 'TypeScript', icon: '/lenguajes/Typescript.png', class: 'typescript', nivel: 'Basico-Intermedio' },
+    { name: 'Java', icon: '/lenguajes/java.png', class: 'java', nivel: 'Intermedio' },
+    { name: 'HTML', icon: '/lenguajes/html.png', class: 'html', nivel: 'Intermedio' },
+    { name: 'CSS3 / SCSS', icon: '/lenguajes/scss.png', class: 'css', nivel: 'Intermedio' },
+    { name: 'PHP', icon: '/lenguajes/php.png', class: 'php', nivel: 'Basico' },
   ];
   frameworks = [
     { name: 'Angular', icon: '/framework/angular.png', class: 'angular', nivel: 'Intermedio' },
-    { name: 'Nest js', icon: '/framework/nest.png', class: 'nest' , nivel: 'Basico'},
-    { name: 'Spring boot', icon: '/framework/spring.png', class: 'spring' , nivel: 'Basico-Intermedio'},
-    { name: 'Bootstrap', icon: '/framework/bootstrap.png', class: 'bootstrap' , nivel: 'Intermedio'},
+    { name: 'Nest js', icon: '/framework/nest.png', class: 'nest', nivel: 'Basico' },
+    { name: 'Spring boot', icon: '/framework/spring.png', class: 'spring', nivel: 'Basico-Intermedio' },
+    { name: 'Bootstrap', icon: '/framework/bootstrap.png', class: 'bootstrap', nivel: 'Intermedio' },
     { name: 'Laravel', icon: '/framework/laravel.png', class: 'laravel', nivel: 'Basico-intermedio' },
   ];
 
@@ -148,7 +148,10 @@ export class Inicio {
 
   abrirProyecto(proyecto: any) {
     this.dialog.open(DetalleProyecto, {
-      width: '90%',
+
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+      panelClass: 'dialog-grande',
       data: proyecto
     });
   }

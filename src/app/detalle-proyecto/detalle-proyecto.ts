@@ -69,13 +69,13 @@ import { SafeUrlPipe } from './safe-url.pipe';
       </div>
     </div>`,
   styles: [`
-    .imagenes img { width: 100%; margin-bottom: 10px; border-radius: 8px; }
-    .arquitectura { width: 100%; margin-top: 20px; }
+    .imagenes img { width: 90%; margin-bottom: 10px; border-radius: 8px; }
+    .arquitectura { width: 90%; margin-top: 20px; }
   `]
 })
 export class DetalleProyecto {
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
-  
+
 
 }

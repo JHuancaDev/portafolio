@@ -1,24 +1,28 @@
-<div class="perfil">
+
+<div id="inicio" class="perfil">
     <div class="perfil__foto">
         <img src="/inicio/foto.jpeg" alt="Foto de Javier Huanca Castro">
         <h3>Javier Huanca Castro</h3>
     </div>
 
-    <div class="perfil__info">
-        <h1>Estudiante Universitario - 7mo Ciclo</h1>
+    <div  class="perfil__info">
+        <h1>DESARROLLADOR BACKEND</h1>
         <h2>Ingeniería de Sistemas</h2>
-        <p>Enfocado en el desarrollo backend y con proyección a trabajar con Flutter en el futuro.</p>
-        <p>Apasionado por la programación y la tecnología, siempre buscando nuevos retos que me permitan seguir
-            aprendiendo y creciendo profesionalmente.</p>
-        <p>Actualmente buscando desarrollarme en el trabajo real</p>
+        <h3>Principales habilidades</h3>
+        <ul>
+            <li>Creacion y consumo de APIs</li>
+            <li>Manejo de base de datos, sea MySQL, SQLite, SQLServer</li>
+            <li>Manejo de VPS(Virtual private Server) basico</li>
+            <li>Ciclo de vida de aplicación</li>
+        </ul>
 
-        <a id="contacto" href="https://api.whatsapp.com/send/?phone=%2B51907013066">Contactame</a>
+        <a href="https://api.whatsapp.com/send/?phone=%2B51907013066" target="_blank" >Contactame</a>
     </div>
 
 
 </div>
 <section class="skills">
-    <h2>Lenguajes</h2>
+    <h2 id="lenguajes">Lenguajes</h2>
     <div class="skills__grid">
         <div *ngFor="let lenguaje of lenguajes" class="skill-card" [ngClass]="lenguaje.class">
             <img [src]="lenguaje.icon" [alt]="lenguaje.name + ' logo'">
@@ -27,7 +31,7 @@
         </div>
     </div>
     <br><br>
-    <h2>Framework</h2>
+    <h2 id="framework">Framework</h2>
     <div class="skills__grid">
         <div *ngFor="let framework of frameworks" class="skill-card" [ngClass]="framework.class">
             <img [src]="framework.icon" [alt]="framework.name + ' logo'">
@@ -37,7 +41,7 @@
     </div>
 </section>
 <section class="proyectos">
-    <h2>Proyectos</h2>
+    <h2 id="proyectos">Proyectos</h2>
     <div class="proyectos__grid">
         <div *ngFor="let proyecto of proyectos" class="proyecto-card" (click)="abrirProyecto(proyecto)">
             <img [src]="proyecto.portada" alt="{{ proyecto.titulo }} portada">

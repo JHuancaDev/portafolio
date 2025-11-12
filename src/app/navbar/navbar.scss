@@ -1,14 +1,27 @@
-div {
+header {
+  display: flex;
 
-  mat-toolbar {
-    background: #1976d2;
-    /* Color primario de Material */
-    color: white;
-    display: block;
-    text-align: center;
-    div{
-      padding: 1rem;
-      font-size: 30px;
+  h2 {
+    padding: 1rem 1rem 1rem 11rem;
+    margin-top: 2rem;
+  }
+
+  div {
+    display: flex;
+    margin: 2rem;
+
+    a {
+      padding: 1rem 1.4rem 1rem 1.5rem;
+      margin: auto 1rem;
+      font-size: 24px;
+      color: #0d37f3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ffffff;
+      background-color: #11a6c0;
+      border-radius: 1rem;
     }
   }
 }
