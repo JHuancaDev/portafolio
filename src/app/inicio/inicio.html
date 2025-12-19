@@ -1,52 +1,63 @@
-
 <div id="inicio" class="perfil">
     <div class="perfil__foto">
-        <img src="/inicio/foto.jpeg" alt="Foto de Javier Huanca Castro">
+        <img src="/inicio/foto.png" alt="Foto de Javier Huanca Castro">
         <h3>Javier Huanca Castro</h3>
     </div>
 
-    <div  class="perfil__info">
-        <h1>DESARROLLADOR BACKEND</h1>
+    <div class="perfil__info">
+        <div>
+            <h1>DESARROLLADOR FRONTEND JUNIOR</h1>
+        </div>
         <h2>Ingeniería de Sistemas</h2>
-        <h3>Principales habilidades</h3>
+        <h3>Un poco de mi</h3>
         <ul>
-            <li>Creacion y consumo de APIs</li>
-            <li>Manejo de base de datos, sea MySQL, SQLite, SQLServer</li>
-            <li>Manejo de VPS(Virtual private Server) basico</li>
-            <li>Ciclo de vida de aplicación</li>
+            <li>Consumo de APIs.</li>
+            <li>Diseño responsivo, mobile, tablet, laptop o dispositivos mas grandes.</li>
+            <li>Diseño critico.</li>
+            <li>Testing básico</li>
         </ul>
 
-        <a href="https://api.whatsapp.com/send/?phone=%2B51907013066" target="_blank" >Contactame</a>
+        <a href="https://api.whatsapp.com/send/?phone=%2B51907013066" target="_blank">WhastApp?</a>
     </div>
 
 
 </div>
 <section class="skills">
-    <h2 id="lenguajes">Lenguajes</h2>
-    <div class="skills__grid">
-        <div *ngFor="let lenguaje of lenguajes" class="skill-card" [ngClass]="lenguaje.class">
-            <img [src]="lenguaje.icon" [alt]="lenguaje.name + ' logo'">
-            <span>{{ lenguaje.name }}</span>
-            <span>Nivel: {{ lenguaje.nivel }}</span>
-        </div>
-    </div>
-    <br><br>
     <h2 id="framework">Framework</h2>
     <div class="skills__grid">
-        <div *ngFor="let framework of frameworks" class="skill-card" [ngClass]="framework.class">
-            <img [src]="framework.icon" [alt]="framework.name + ' logo'">
-            <span>{{ framework.name }}</span>
-            <span>Nivel: {{ framework.nivel }}</span>
+        <div class="tarjeta-skills">
+            <h3>Angular CLI</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Angular_gradient_logo.png/1200px-Angular_gradient_logo.png" alt="asd">
+            <h4>Complementos</h4>
+            <ul>
+                <li>Angular Material UI</li>
+                <li>PRIMENG</li>
+                <li>HTML5</li>
+                <li>SCSS</li>
+                <li>Diseño responsivo</li>
+            </ul>
+        </div>
+
+        <div class="tarjeta-skills">
+            <h3>Flutter</h3>
+            <img src="https://docs.flutter.dev/assets/images/flutter-logo-sharing.png" alt="asd">
+            <h4>Complementos</h4>
+            <ul>
+                <li>Dart</li>
+                <li>Widget</li>
+                <li>Consumo de APIs</li>
+            </ul>
         </div>
     </div>
 </section>
-<section class="proyectos">
-    <h2 id="proyectos">Proyectos</h2>
-    <div class="proyectos__grid">
-        <div *ngFor="let proyecto of proyectos" class="proyecto-card" (click)="abrirProyecto(proyecto)">
-            <img [src]="proyecto.portada" alt="{{ proyecto.titulo }} portada">
-            <h3>{{ proyecto.titulo }}</h3>
-            <p>{{ proyecto.descripcion }}</p>
-        </div>
+
+<section class="conocimientos">
+    <h2>Conocimientos extras</h2>
+    <div class="nociones-conocimientos">
+        <p>Tengo conocimientos de creacion de APIs, manejo de base de datos, MySQL, SQLite, SQLServer, tambien manejo basico de Framework como Spring Boot con JPA, Lombok, POM para las dependencias, luego conocimientos con Firebase, Supabase para almacenar datos e imagenes, autenticacion con Google.</p>
     </div>
+</section>
+
+<section class="proyectos">
+    <h2>Proyectos - En proceso</h2>
 </section>

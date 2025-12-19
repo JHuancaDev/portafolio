@@ -1,9 +1,12 @@
 header {
+  background-color: #fff  ;
   display: flex;
+  justify-content: space-around;
 
   h2 {
-    padding: 1rem 1rem 1rem 11rem;
+    padding: 1rem 1rem 1rem 1rem;
     margin-top: 2rem;
+    font-size: 1.5rem;
   }
 
   div {
@@ -14,13 +17,13 @@ header {
       padding: 1rem 1.4rem 1rem 1.5rem;
       margin: auto 1rem;
       font-size: 24px;
-      color: #0d37f3;
+      color: #0e5097;
       text-decoration: none;
     }
 
     a:hover {
       color: #ffffff;
-      background-color: #11a6c0;
+      background-color: #5dc8f8;
       border-radius: 1rem;
     }
   }
